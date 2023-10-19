@@ -1,0 +1,221 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+img {
+    width: 100%;
+}
+
+@font-face {
+    font-family: nevan;
+    src: url(../fonts/Nevan_RUS.otf);
+}
+
+header {
+    padding: 20px 20px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    z-index: 1000;
+}
+
+header .logo a {
+    font-family: nevan;
+    font-size: 1.2em;
+    color: #000;
+    text-decoration: none;
+}
+
+header .items a {
+    text-decoration: none;
+    color: #000;
+    padding-right: 20px;
+    font-size: 0.8em;
+    font-weight: 600;
+}
+
+header .utils a {
+    color: #000;
+    padding-left: 25px;
+}
+
+.count {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #41cde2;
+    color: #fff;
+    line-height: 18px;
+    font-size: 10px;
+    top: 18px;
+    text-align: center;
+}
+
+.carousel-item {
+    height: 100vh;
+    min-height: 300px;
+}
+
+.carousel-caption h5 {
+    color: black;
+    font-size: 4em;
+    font-weight: 300;
+    word-spacing: 2px;
+}
+
+.carousel-caption {
+    position: absolute;
+    left: 0;
+    width: 500px;
+    top: 40%;
+    transition: all 0.7s ease-in-out;
+}
+
+.sec2 {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: #F9F9F9;
+    padding: 50px;
+}
+
+.sec2 .info-card {
+    display: flex;
+    width: 100%;
+    margin-right: 20px;
+    align-items: center;
+}
+
+.sec2 .info-card .ic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    padding: 10px;
+    color: #C4C4C4;
+}
+
+.sec2 .info-card .infos {
+    padding-top: 15px;
+    padding-left: 20px;
+}
+
+.sec2 .info-card .infos h5 {
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+.sec2 .info-card .infos p {
+    font-size: 0.9em;
+    font-weight: 400;
+    color: #9BA2A6;
+}
+
+.sec3 {
+    background-color: #fff;
+    display: flex;
+    padding: 50px 0;
+    justify-content: space-around;
+}
+
+.sec3 .category {
+    width: 30%;
+    cursor: pointer;
+}
+
+.img-hover-zoom {
+    height: 300px;
+    overflow: hidden;
+}
+
+.img-hover-zoom img {
+    transition: transform .5s ease;
+}
+
+.img-hover-zoom:hover img {
+    transform: scale(1.2);
+}
+
+.collection_title {
+    
+    position: relative;
+    top: -5vw;
+    left: 8.8vw;
+    font-size: 1.6em;
+    width: 180px;
+    text-align: center;
+    background-color: #fff;
+    padding: 15px;
+    cursor: pointer;
+    background: linear-gradient(to right, #41CDE2 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+}
+
+.collection_title:hover {
+    background-position: left bottom;
+}
+.collection_title:hover .collection_link {
+    color: #fff;
+}
+.collection_link{
+    text-decoration: none;
+    color: #000;    
+    transition: all .5s ease-out;
+}
+.sec4{
+    padding: 0 50px;
+}
+
+.sub {
+    background: url(../imgs/background4.jpg);
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.shop{
+    font-size: 1.5em;
+    width: 180px;
+    text-align: center;
+    background-color: #000;
+    padding: 15px;
+    cursor: pointer;
+    background: linear-gradient(to right, #41CDE2 50%, black 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: background .5s ease-out;
+}
+.shop:hover {
+    background-position: left bottom;
+}
+.shop:hover .shop_link {
+    color: #fff;
+}
+.shop_link{
+    text-decoration: none;
+    color:#fff
+}
+
+.sub_info {
+    width: 35%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-left: 100px;
+}
+.sub_info h3 {
+    margin-bottom: 50px;
+}
